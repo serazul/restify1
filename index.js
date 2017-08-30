@@ -77,7 +77,7 @@ req = request.defaults({
                 Descripcion: TXT,
                 Humedad: HUM,
     });
-    var starCountRef = admin.database().ref('Indexers');
+    var starCountRef = firebase.database().ref('Indexers');
     starCountRef.on('value', function(snapshot) {
       updateStarCount(postElement, snapshot.val());
     });
@@ -86,7 +86,7 @@ req = request.defaults({
         res.send(starCountRef);
     }
     
-    server.get('/indicadores', respond);
+    server.get('/', respond);
     
 
     var port = process.env.PORT || 5000;
