@@ -77,7 +77,7 @@ req = request.defaults({
                 Descripcion: TXT,
                 Humedad: HUM,
     });
-    var starCountRef = firebase.database().ref('Indexers');
+    var starCountRef = admin.database().ref('Indexers');
     starCountRef.on('value', function(snapshot) {
       updateStarCount(postElement, snapshot.val());
     });
