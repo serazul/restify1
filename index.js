@@ -86,7 +86,7 @@ req = request.defaults({
         res.send(starCountRef);
     }
     
-    server.get('/', respond);
+    server.get('/indicadores', respond);
     
 
     var port = process.env.PORT || 5000;
