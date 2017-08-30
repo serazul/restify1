@@ -24,13 +24,13 @@
     "fs":"^0.0.1-security",
     "node-restful":"^0.2.6",
     "cron":"^1.2.1",
-    "restify":"^5.2.0"
+    "restify": "2.4.x"
     },
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://git.heroku.com/whispering-taiga-78102.git"
+    "url": "https://restify1.herokuapp.com/"
   }
 }
